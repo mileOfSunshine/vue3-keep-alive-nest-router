@@ -11,7 +11,7 @@ export const routes = [
         component: () => import("@/views/Home.vue"),
         meta: {
           title: "首页",
-          keepAlive: true
+          keepAlive: false
         }
       },
       {
