@@ -42,10 +42,10 @@ import { findRouterWith, getCachesByRoutes } from "@/utils";
 export default {
   name: "Layout",
   setup() {
-    // 找到所有以 NestRouterView 组件作为路由嵌套的页面
+    // 找到所有以 Layout 组件作为路由嵌套的页面
     const target = findRouterWith("Layout")(routes);
     const caches = getCachesByRoutes(target);
-    console.log(caches, "caches==");
+
     return {
       caches,
     };

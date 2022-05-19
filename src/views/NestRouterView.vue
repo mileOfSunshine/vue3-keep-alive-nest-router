@@ -26,8 +26,8 @@ export default {
     // 找到所有以 NestRouterView 组件作为路由嵌套的页面
     const target = findRouterWith("NestRouterView")(routes);
     const caches = getCachesByRoutes(target);
-    console.log(caches, "caches---");
     const goBack = () => window.history.back();
+
     return {
       caches,
       goBack,
